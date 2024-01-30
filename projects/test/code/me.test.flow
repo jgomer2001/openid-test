@@ -3,7 +3,7 @@ Flow me.test
 // Populate external OP settings
 obj = { host: "https://jgomer2001-easy-goose.gluu.info", dcr: { enabled: true, useCachedClient: true }, oauth: { scopes: ["openid" ] } }
 // Launch the openid flow and retrieve the user id
-uid = Trigger org.gluu.inbound.openid "goose"
+uid = Trigger org.gluu.inbound.openid obj "goose"
 // Authenticate the user identified by uid
-it_hogoc = {success:true, data: { userId: uid}}
-Finish it_hogoc
+it_taupi = {success:true, data: { userId: uid}}
+Finish it_taupi
