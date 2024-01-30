@@ -159,7 +159,8 @@
 					"nodeIcon": "ph:globe-simple",
 					"templatePath": "index.ftlh",
 					"asssignedVariableName": "data"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -207,7 +208,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 458,
@@ -289,8 +290,8 @@
 		}
 	],
 	"viewport": {
-		"x": 15,
-		"y": 68,
+		"x": 10,
+		"y": 15,
 		"zoom": 1
 	}
 }
