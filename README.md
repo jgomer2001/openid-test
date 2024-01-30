@@ -1,2 +1,1 @@
-# openid-test
-Testing agama-openid project
+### Agama Project Folder
