@@ -27,15 +27,15 @@
 					"hasSuccess": false,
 					"hasFailure": false,
 					"hasComment": true,
-					"comment": "Authenticate the user identified by uid",
+					"comment": "Authenticate the given user",
 					"flowfilename": "",
-					"returnVariable": "{ userId: uid}",
+					"returnVariable": "{ userId: outcome.userId }",
 					"finishMode": "withSuccess",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 889,
@@ -67,13 +67,16 @@
 					"type": "Agama-trigger-Node",
 					"displayName": "",
 					"hasComment": true,
-					"comment": "Launch the openid flow and retrieve the user id",
+					"comment": "Launch the openid flow and grab its response",
 					"whenCondition": "",
 					"inRepeatBlock": false,
 					"nodeIcon": "fluent-mdl2:trigger-approval",
 					"flowFileName": "org.gluu.inbound.openid",
-					"arguments": "obj \"goose\"",
-					"asssignedVariableName": "uid",
+					"arguments": [
+						"obj",
+						"\"goose\""
+					],
+					"asssignedVariableName": "outcome",
 					"exceptionVariableField": ""
 				},
 				"skake": false
