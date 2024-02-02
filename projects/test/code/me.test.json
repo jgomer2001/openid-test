@@ -29,7 +29,7 @@
 					"hasComment": true,
 					"comment": "Authenticate the given user",
 					"flowfilename": "",
-					"returnVariable": "{ userId: outcome.userId }",
+					"returnVariable": "{ userId: outcome.data.userId }",
 					"finishMode": "withSuccess",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
 				},
