@@ -7,5 +7,5 @@ obj = { host: data.host, dcr: { enabled: true, useCachedClient: true }, oauth: {
 // Launch the openid flow and grab its response
 outcome = Trigger org.gluu.inbound.openid obj "goose"
 // Authenticate the given user
-it_cvsjn = {success:true, data: { userId: outcome.userId }}
-Finish it_cvsjn
+it_gduwz = {success:true, data: { userId: outcome.data.userId }}
+Finish it_gduwz
