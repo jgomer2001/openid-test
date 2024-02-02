@@ -4,8 +4,8 @@ Flow me.test
 data = RRF "index.ftlh" 
 // Populate external OP settings
 obj = { host: data.host, dcr: { enabled: true, useCachedClient: true }, oauth: { scopes: ["openid" ] } }
-// Launch the openid flow and retrieve the user id
-uid = Trigger org.gluu.inbound.openid obj "goose"
-// Authenticate the user identified by uid
-it_vojrz = {success:true, data: { userId: uid}}
-Finish it_vojrz
+// Launch the openid flow and grab its response
+outcome = Trigger org.gluu.inbound.openid obj "goose"
+// Authenticate the given user
+it_cvsjn = {success:true, data: { userId: outcome.userId }}
+Finish it_cvsjn
